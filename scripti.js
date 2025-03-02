@@ -11,3 +11,7 @@ function sendMmail() {
     }
     emailjs.send("service_2mdn9gq","template_i4r5m6q",paramss).then(alert("Email sent successfully!"));
 }
+
+function goToForm(formId) {
+    document.getElementById(formId).scrollIntoView({ behavior: 'smooth' });
+  }
